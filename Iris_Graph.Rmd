@@ -28,10 +28,12 @@ library(tidyverse)
 iris_scatter <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
   geom_point(aes(color = Species)) +
   facet_wrap(~Species, scale = 'free') +
-  theme(legend.position="none")
+  theme(legend.position="none") +
+  labs(x= "Petal Length (mm)", y = "Petal Width (mm)") 
 
 iris_scatter
 
 ```
 
 
+'iris_scatter' not found
